@@ -32,38 +32,29 @@ p {
   clear:right; 
   }
 
-  
-  #lion {
-         width: 120px;
-         height: 30px;
-         float:right;
-          color: red;
-          background-color: yellow;
+  section { 
+          width: 120px;
+          height: 30px;
+          float:right;
           border: 1px solid black;
           font-size: 1.25em;
           text-align:center;
+         
+          }
+  #lion {
+          color: red;
+          background-color: yellow;
            }
 
   #elephant {
-          width: 120px;
-          height: 30px;
-          float:right;
           color:darkgreen;
           background-color:lightblue;
-          border: 1px solid black;
-          font-size: 1.25em;
-          text-align:center;
-        }
+         }
 
   #bear {
-          width: 120px;
-          height: 30px;
-          float:right;
-          color:purple;
+         color:purple;
           background-color:orange;
-          border: 1px solid black;
-          font-size: 1.25em;  
-          text-align: center;      
+               
         }
 
 
