@@ -5,26 +5,237 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assignment Solution Module 2</title>
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="home/coursera-test/mod2_solution/css/styles.css">
 
+
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+   text-align:center;
+  color:maroon;
+  font-size:1.75em;}
+
+.row {
+  width: 100%;
+}
+  
+#container {position:relative;} 
+ 
+
+
+p {
+  background-color: #bfbfbf;
+  border: 2px solid black;
+  height: 150px;
+  margin-right: 10px;
+  overflow: hidden;
+  padding: 40px 10px 5px 10px;
+}
+
+      
+          
+  #lion {
+          background-color: #D59898;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+           }
+
+  #elephant {
+          background-color:#C14543 ;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+         }
+
+  #bear {
+         background-color: #E5D198;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  height: 35px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+
+/********** Desktop only **********/
+@media (min-width: 992px)  {
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {float: left;
+    border: 1px solid black;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+    
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+    
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+    
+  }
+}
+/********** Tablet view only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {float: left;
+  border: 1px solid black;
+    }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Mobile  view only **********/
+@media (max-width: 767px) {
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {float: left;
+    border: 1px solid black;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+
+
+</style>
 </head>
+ 
 <body>
 <h1>Wild Animals</h1>
 
 
 <div class="row"> 
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <section id="lion"> Lion</section>
+  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
+    <p id="lion"> Lion</p>
     <p>The lion is a creature that belongs to the animal kingdom. Forests or jungles are the natural habitats of lions. The animal is called the ‘King of the Jungle’ because of its strength and power. </p></div>
     
     
-  <div class="col-lg-4 col-md-6 col-sm-12">
-    <section id="elephant"> Elephant </section>
+  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
+    <p id="elephant"> Elephant </p>
     <p>The elephant is a large size living creature on the earth. The elephant has four legs, two small eyes, two big ears, a trunk, and a small tail. All four legs of the elephant are very thick and wide.</p></div>
   
   
-  <div class="col-lg-4 col-md-12 col-sm-12">
-  <section id="bear"> Bear </section>
+  <div class="col-lg-4 col-md-12 col-sm-12" id="container">
+  <p id="bear"> Bear </p>
     <p> Bears are one of the smartest and intelligent mammals on this earth.Bears can stand easily on their two rear legs. Bears' nails very strong and sharp. Bear is a carnivorous animal. </p>
   </div>
   
